@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "limits": "cpp",
+        "__hash_table": "cpp",
+        "deque": "cpp",
+        "istream": "cpp",
+        "locale": "cpp",
+        "mutex": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "variant": "cpp",
+        "vector": "cpp"
+    }
+}
