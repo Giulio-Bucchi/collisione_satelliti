@@ -138,7 +138,7 @@ def update(frame):
         
     return sat1_point, sat2_point, traj1, traj2, info_text, collision_text
 
-# Crea animazione - IMPORTANTE: usa blit=False per i grafici 3D
+# Crea animazione 
 ani = FuncAnimation(
     fig, update, frames=len(x1),
     init_func=init, blit=False, interval=20, repeat=True
