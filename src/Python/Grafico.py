@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
 # Carica i dati dal file CSV
-data = pd.read_csv('/Users/giulio_bucchi/Desktop/c++/Collisione/src/Python/dati_satelliti.csv')
+data = pd.read_csv('/Users/.../.../.../Collisione/src/Python/dati_satelliti.csv')
 x1, y1, z1 = data['x1'], data['y1'], data['z1']
 x2, y2, z2 = data['x2'], data['y2'], data['z2']
 distanza = data['distanza']
