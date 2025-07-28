@@ -19,9 +19,9 @@ Registrazione della distanza minima tra i satelliti
 
 ## Requisiti di Sistema
 
-Compilatore C++ (g++ o equivalente)
-Python 3.x
-Librerie Python richieste:
+- Compilatore C++ (g++ o equivalente)
+- Python 3.x
+- Librerie Python richieste:
 ```bash
   pip install pandas matplotlib numpy
 ```
