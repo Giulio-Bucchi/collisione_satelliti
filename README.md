@@ -70,9 +70,9 @@ Un'animazione GIF (orbita_collisione.gif) della simulazione
 Personalizzazione.
 Nello script Python Grafico.py è possibile modificare:
 
-Soglie di allarme per collisione
-Aspetto grafico dell'animazione
-Durata e velocità dell'animazione
+- Soglie di allarme per collisione
+- Aspetto grafico dell'animazione
+- Durata e velocità dell'animazione
 
 ```bash
 # Soglie di allarme (in km)
