@@ -1,4 +1,4 @@
-# COLLISIONE SATELLITI 🛰️
+# Simulatore di Collisione Satelliti  🛰️
 
 https://github.com/user-attachments/assets/8a9848fe-eced-49ac-b3b9-1931cfb7a5eb
 
@@ -22,31 +22,32 @@ Registrazione della distanza minima tra i satelliti
 Compilatore C++ (g++ o equivalente)
 Python 3.x
 Librerie Python richieste:
-pandas
-matplotlib
-numpy
-Installazione
-
+```bash
+  pip install pandas matplotlib numpy
+```
 ## Clonare il repository:
-bash
+```bash
 git clone https://github.com/tuoutente/simulatore-collisioni-satelliti.git
 cd simulatore-collisioni-satelliti
-Compilare il programma C++:
-bash
-g++ Satellite.cpp -o satellite_simulator -std=c++11
-Utilizzo
+```
 
+Compilare il programma C++:
+```bash
+g++ Satellite.cpp -o Satellite_sim
+```
 Eseguire il simulatore C++ per generare i dati:
-bash
+```bash
 ./satellite_simulator
+```
 Generare l'animazione con Python:
-bash
+```bash
 python Grafico.py
+```
 Configurazione della Simulazione
 
 È possibile modificare i parametri iniziali dei satelliti nel file Satellite.cpp:
 
-cpp
+```bash
 // Esempi di configurazioni preimpostate:
 // Collisione frontale:
 Satellite sat1 = {7000, 0, 0, 0, v_orb, 0};
@@ -59,16 +60,29 @@ Satellite sat2 = {6950, 0, 0, 0, v_orb * 1.05, 0};
 // Avvicinamento senza collisione:
 Satellite sat1 = {7000, 0, 0, 0, v_orb, 0};
 Satellite sat2 = {6900, 500, 0, 0.5, v_orb * 1.02, 0};
-Output
+```
 
-Il programma genera:
+
+# Il programma genera:
 
 Un file CSV (dati_satelliti.csv) con le traiettorie dei satelliti
 Un'animazione GIF (orbita_collisione.gif) della simulazione
-Personalizzazione
-
+Personalizzazione.
 Nello script Python Grafico.py è possibile modificare:
 
 Soglie di allarme per collisione
 Aspetto grafico dell'animazione
 Durata e velocità dell'animazione
+
+```bash
+# Soglie di allarme (in km)
+if dist_km < 2000.0:  # Modifica questo valore
+    # ... codice di avviso ...
+
+# Aspetto grafico
+ax.plot(x1, y1, z1, 'b--', alpha=0.4)  # Colore/trasparenza orbite
+
+# Durata animazione
+ani = FuncAnimation(fig, update, frames=len(x1), interval=20)  # Modifica interval
+
+```
